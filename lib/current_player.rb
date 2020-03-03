@@ -5,10 +5,13 @@ def turn_count(board)
       turns += 1
     end
   end
-  
+
   return turns
 end
 
-def current_player()
-
+def current_player(board)
+  if (turn_count & 1 == 0)
+    return "X"
+  end
+  return "O"
 end
