@@ -1,7 +1,14 @@
-def turn_count
-
+def turn_count(board)
+  turns = 0
+  board.each do |space|
+    if !(space == " ")
+      turns += 1
+    end
+  end
+  
+  return turns
 end
 
-def current_player
+def current_player()
 
 end
